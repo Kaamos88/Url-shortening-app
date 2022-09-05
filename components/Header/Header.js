@@ -1,4 +1,4 @@
-import ButtonRounded from "../Buttons/ButtonRounded";
+import ButtonRounded from "../Buttons/ButtonRounded/ButtonRounded";
 import s from "./Header.module.scss";
 
 const Header = () => {

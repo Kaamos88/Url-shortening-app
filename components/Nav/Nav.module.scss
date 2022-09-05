@@ -4,15 +4,14 @@
   display: flex;
   justify-content: space-between;
   width: 85%;
-  margin: 8rem auto 0 auto;
+  margin: 2rem auto 0 auto;
   @media screen and (min-width: 1024px) {
-    margin: 2rem auto 0 auto;
     width: 100%;
     justify-content: flex-start;
   }
   .wrapper {
     position: fixed;
-    top: 20rem;
+    top: 5rem;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -20,7 +19,8 @@
     justify-content: center;
     background-color: $primeColor2;
     width: 80%;
-    border-radius: 2rem;
+    border-radius: 10px;
+    padding: 1rem 0;
     &.none {
       display: none;
       @media screen and (min-width: 1024px) {
@@ -40,6 +40,7 @@
   }
   .logo {
     width: 40%;
+    margin-top: 5px;
     @media screen and (min-width: 1024px) {
       width: 10%;
       margin-top: 10px;
@@ -49,7 +50,6 @@
     cursor: pointer;
     width: 80%;
     margin: 0 auto;
-    padding-left: 2rem;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -61,18 +61,21 @@
       flex-direction: row;
     }
     li {
-      font-size: 4rem;
-      font-weight: 500;
-      padding: 5rem 1.5rem;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 1rem 1.5rem;
       &:last-child {
         text-align: center;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid rgba($GrayishViolet, 0.2);
         width: 100%;
       }
       @media screen and (min-width: 1024px) {
         font-weight: 700;
         font-size: 1rem;
         padding: 0.5rem 1.5rem;
+        &:last-child {
+          border-bottom: 0;
+        }
       }
     }
   }

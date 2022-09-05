@@ -1,5 +1,5 @@
 import s from "./Nav.module.scss";
-import ButtonRounded from "../Buttons/ButtonRounded";
+import ButtonRounded from "../Buttons/ButtonRounded/ButtonRounded";
 import Logo from "../Icons/Logo";
 import Hamburger from "../Icons/Hamburger/Hamburger";
 import { useSelector } from "react-redux";
