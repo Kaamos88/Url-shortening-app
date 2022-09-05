@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className={s.header}>
       <section className={s.img}>
-        <img  src="/assets/illustration-working.svg" />
+        <img src="/assets/illustration-working.svg" />
       </section>
       <section className={s.text}>
         <h1>More than just shorter links</h1>
@@ -14,10 +14,9 @@ const Header = () => {
           links are performing.
         </p>
         <div className={s.btnWrapper}>
-        <ButtonRounded nameIn={"Get Started"} />
+          <ButtonRounded nameIn={"Get Started"} />
         </div>
       </section>
-      
     </header>
   );
 };

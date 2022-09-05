@@ -32,12 +32,11 @@
       transform: none;
       flex-direction: row;
       border-radius: 0;
-      background-color: #fff;
+      background-color: transparent;
       width: 90%;
       display: flex;
       justify-content: space-between;
-      
-    } 
+    }
   }
   .logo {
     width: 40%;
@@ -61,7 +60,7 @@
       color: $GrayishViolet;
       flex-direction: row;
     }
-    li{
+    li {
       font-size: 4rem;
       font-weight: 500;
       padding: 5rem 1.5rem;
@@ -71,13 +70,11 @@
         width: 100%;
       }
       @media screen and (min-width: 1024px) {
-        
         font-weight: 700;
         font-size: 1rem;
-        padding: .5rem 1.5rem;
+        padding: 0.5rem 1.5rem;
       }
     }
-    
   }
   .hamburger {
     @media screen and (min-width: 1024px) {

@@ -1,4 +1,19 @@
+@import "./variables";
+
 .container {
   width: 1440px;
   margin: 0 auto;
+}
+.wrapper {
+  @media screen and (min-width: 1024px) {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+.statistics {
+  background-color: $Gray;
+}
+
+@media screen and (min-width: 1024px) {
 }

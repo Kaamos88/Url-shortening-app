@@ -1,0 +1,25 @@
+@import "../../styles/variables";
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  height: 20rem;
+  background-color: $primeColor2;
+  background-image: url("/assets/bg-shorten-mobile.svg");
+  background-size: cover;
+  margin: 0 auto;
+  @media screen and (min-width: 1024px) {
+    background-image: url("/assets/bg-shorten-desktop.svg");
+    height: 10rem;
+    width: 100%;
+  }
+  form {
+    width: 80%;
+    input {
+      font-size: 5rem;
+      width: 100%;
+    }
+  }
+}

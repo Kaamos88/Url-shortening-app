@@ -11,13 +11,13 @@
 }
 .img {
   margin: 4rem 0 0 6rem;
-  width: 100%; 
+  width: 100%;
   @media screen and (min-width: 1024px) {
     width: 40%;
     margin: 0;
   }
   img {
-    width: 130%; 
+    width: 130%;
     @media screen and (min-width: 1024px) {
       position: absolute;
       width: 50%;
@@ -60,9 +60,4 @@
     margin: 2rem 0;
     width: 25%;
   }
-}
-
-
-@media screen and (min-width: 1024px) {
-  
 }
