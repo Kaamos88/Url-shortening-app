@@ -1,7 +1,8 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Nav from "../components/Nav/Nav";
+import styles from "../styles/Home.module.scss";
 
- const Home = () => {
+const Home = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -10,10 +11,10 @@ import styles from '../styles/Home.module.css'
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1>It's alive!!!!</h1>
+        <Nav />
       </main>
-     </div>
-  )
-}
+    </div>
+  );
+};
 
 export default Home;

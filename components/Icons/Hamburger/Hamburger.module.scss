@@ -1,0 +1,26 @@
+@import '../../../styles/variables';
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 105px;
+  height: 15px;
+  background-color: $GrayishViolet;
+  margin: 18px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-27px, 18px);
+  transform: rotate(-45deg) translate(-27px, 18px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-24px, -24px);
+  transform: rotate(45deg) translate(-24px, -24px);
+}
