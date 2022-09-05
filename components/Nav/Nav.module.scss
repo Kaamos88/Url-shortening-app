@@ -23,6 +23,9 @@
     border-radius: 2rem;
     &.none {
       display: none;
+      @media screen and (min-width: 1024px) {
+        display: flex;
+      }
     }
     @media screen and (min-width: 1024px) {
       position: static;
@@ -33,6 +36,7 @@
       width: 90%;
       display: flex;
       justify-content: space-between;
+      
     } 
   }
   .logo {
@@ -80,8 +84,4 @@
       display: none;
     }
   }
-}
-
-@media screen and (min-width: 1024px) {
-  
 }

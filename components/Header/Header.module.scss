@@ -1,0 +1,68 @@
+@import "../../styles/variables";
+
+.header {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 1024px) {
+    flex-direction: row-reverse;
+    margin: 3rem 0;
+  }
+}
+.img {
+  margin: 4rem 0 0 6rem;
+  width: 100%; 
+  @media screen and (min-width: 1024px) {
+    width: 40%;
+    margin: 0;
+  }
+  img {
+    width: 130%; 
+    @media screen and (min-width: 1024px) {
+      position: absolute;
+      width: 50%;
+    }
+  }
+}
+.text {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  @media screen and (min-width: 1024px) {
+    margin-top: 5rem;
+    width: 60%;
+    text-align: start;
+  }
+  h1 {
+    margin: 4rem 0 0 0;
+    color: $VeryDarkBlue;
+    font-size: 8rem;
+    @media screen and (min-width: 1024px) {
+      margin: 0;
+      font-size: 5rem;
+    }
+  }
+  p {
+    margin: 0;
+    color: $GrayishViolet;
+    font-size: 3rem;
+    @media screen and (min-width: 1024px) {
+      width: 80%;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
+}
+.btnWrapper {
+  width: 60%;
+  margin: 4rem auto 0 auto;
+  @media screen and (min-width: 1024px) {
+    margin: 2rem 0;
+    width: 25%;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  
+}

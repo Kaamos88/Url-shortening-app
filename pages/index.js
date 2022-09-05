@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Header from "../components/Header/Header";
 import Nav from "../components/Nav/Nav";
 import styles from "../styles/Home.module.scss";
 
@@ -12,6 +13,7 @@ const Home = () => {
       </Head>
       <main>
         <Nav />
+        <Header />
       </main>
     </div>
   );
