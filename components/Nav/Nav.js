@@ -1,5 +1,5 @@
 import s from "./Nav.module.scss";
-import ButtonRounded from "../Buttons/ButtonRounded/ButtonRounded";
+import Button from "../Buttons/Button";
 import Logo from "../Icons/Logo";
 import Hamburger from "../Icons/Hamburger/Hamburger";
 import { useSelector } from "react-redux";
@@ -20,7 +20,7 @@ const Nav = () => {
         </ul>
         <ul>
           <li>Login</li>
-          <ButtonRounded nameIn={"Sign Up"} />
+          <Button nameIn={"Sign Up"} type={'btnRnd'} />
         </ul>
       </div>
       <div className={s.hamburger}>

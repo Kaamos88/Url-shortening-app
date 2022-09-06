@@ -1,4 +1,4 @@
-import ButtonRounded from "../Buttons/ButtonRounded/ButtonRounded";
+import Button from "../Buttons/Button";
 import s from "./Header.module.scss";
 
 const Header = () => {
@@ -14,7 +14,7 @@ const Header = () => {
           links are performing.
         </p>
         <div className={s.btnWrapper}>
-          <ButtonRounded nameIn={"Get Started"} />
+          <Button nameIn={"Get Started"} type={'btnRnd'} />
         </div>
       </section>
     </header>

@@ -2,6 +2,7 @@
 
 .searchBar {
   display: flex;
+  transform: translateY(-50%);
   justify-content: center;
   align-items: center;
   width: 85%;
@@ -9,15 +10,64 @@
   background-image: url("/assets/bg-shorten-mobile.svg");
   background-size: cover;
   margin: 0 auto;
+  border-radius: 12px;
   @media screen and (min-width: 1024px) {
     background-image: url("/assets/bg-shorten-desktop.svg");
     width: 100%;
   }
   form {
-    width: 80%;
-    input {
-      font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    width: 85%;
+    @media screen and (min-width: 1024px) {
+      padding: 2.5rem 0;
+      flex-direction: row;
+    }
+    .inputWrapper {
       width: 100%;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+      @media screen and (min-width: 1024px) {
+        width: 80%;
+        margin-bottom: 0;
+      }
+
+      input {
+        outline: none;
+        border-radius: 12px;
+        border: 0;
+        padding: 1rem 1rem 0.5rem 1rem;
+        font-size: 1rem;
+        width: 100%;
+        height: 3.5rem;
+        @media screen and (min-width: 1024px) {
+          margin-bottom: 0;
+        }
+        &.err {
+          outline: 3px solid $secondaryColor;
+        }
+      }
+      label {
+        display: none;
+        font-style: italic;
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+        color: $secondaryColor;
+        @media screen and (min-width: 1024px) {
+          position: absolute;
+        }
+        &.err {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .btnWrapper {
+    height: 3.5rem;
+    @media screen and (min-width: 1024px) {
+      width: 20%;
     }
   }
 }

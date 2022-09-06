@@ -3,7 +3,6 @@
 .btn {
   cursor: pointer;
   width: 100%;
-  border-radius: 100px;
   border: 0;
   padding: .5rem 0;
   color: #fff;
@@ -11,11 +10,22 @@
   font-family: $fontPoppins;
   font-size: 1rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  transition: 0.3s;
   @media screen and (min-width: 1024px) {
     padding: .5rem 1.5rem;
     margin: 0;
     font-size: 1rem;
     font-weight: 700;
   }
+  &:hover {
+    filter: brightness(1.2);
+  }
 }
+.btnRnd{
+  border-radius: 100px;
+}
+.btnSq {
+  border-radius: 12px;
+  padding: 1rem 2rem;
+}
+

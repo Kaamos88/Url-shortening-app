@@ -17,10 +17,13 @@ const Home = () => {
           <div className={s.wrapper}>
             <Nav />
             <Header />
+          </div>
+        </section>
+        <section className={s.statistics}>
+          <div className={s.wrapper}>
             <SearchBar />
           </div>
         </section>
-        <section className={s.statistics}>s</section>
       </main>
     </div>
   );
