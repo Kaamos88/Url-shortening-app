@@ -2,6 +2,7 @@ import Head from "next/head";
 import Header from "../components/Header/Header";
 import Nav from "../components/Nav/Nav";
 import SearchBar from "../components/SearchBar/SearchBar";
+import UrlsList from "../components/urls list/UrlsList";
 import s from "../styles/Home.module.scss";
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
         <section className={s.statistics}>
           <div className={s.wrapper}>
             <SearchBar />
+            <UrlsList />
           </div>
         </section>
       </main>

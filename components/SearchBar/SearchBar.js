@@ -1,8 +1,11 @@
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { getShortUrl } from "../../features/url-list/urlListSlice";
 import Button from "../Buttons/Button";
 import s from "./SearchBar.module.scss";
 
 const SearchBar = () => {
+  const dispatch = useDispatch();
   const [term, setTerm] = useState("");
   const [err, setErr] = useState(false);
   const empty = err ? s.err : "";
@@ -11,6 +14,7 @@ const SearchBar = () => {
     if (!term) {
       setErr(true);
     } else {
+      dispatch(getShortUrl(term));
       setTerm("");
     }
   };
