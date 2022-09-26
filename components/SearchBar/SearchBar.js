@@ -16,14 +16,25 @@ const SearchBar = () => {
     } else {
       dispatch(getShortUrl(term));
       setTerm("");
+      moveTo();
     }
   };
 
+  const moveTo = () => {
+    const element = document.getElementById("scrollToMe");
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "end",
+      inline: "nearest",
+    });
+  };
+
   return (
-    <div className={s.searchBar}>
+    <div id="searchBar" className={s.searchBar}>
       <form onSubmit={onSubmit}>
         <div className={s.inputWrapper}>
           <input
+            id="searchInput"
             placeholder="Shorten a link here..."
             value={term}
             onChange={(e) => {

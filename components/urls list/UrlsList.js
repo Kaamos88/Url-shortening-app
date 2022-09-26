@@ -9,21 +9,31 @@ const UrlsList = () => {
 
   const renderList = URLs.map((url, i) => {
     return (
-      <li id="scrollTo" key={i}>
+      <li id={i} key={i}>
         <div className={s.listElement}>
           <p>{url}</p>
-          <p id="copyUrl">{shortenURLs[i]}</p>
-          <div className={s.btnWrapper} onClick={() => dispatch(copyLink(i))}>
-            <Button nameIn={"Copy"} type={"btnSq"} copy={isCopied ? true : false}/>
+          <p id="copyUrl" onLoad={console.log("jestem")}>
+            {shortenURLs[i]}
+          </p>
+          <div
+            className={s.btnWrapper}
+            onClick={() => {
+              dispatch(copyLink(i));
+            }}
+          >
+            <Button
+              nameIn={"Copy"}
+              type={"btnSq"}
+              copy={isCopied ? true : false}
+            />
           </div>
         </div>
       </li>
     );
   });
 
-
   return (
-    <div className={s.wrapper}>
+    <div id="scrollToMe" className={s.wrapper}>
       <ul>{renderList}</ul>
     </div>
   );
