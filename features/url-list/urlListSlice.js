@@ -22,12 +22,18 @@ const initialState = {
   URLs: [],
   shortenURLs: [],
   isLoading: true,
+  isCopied: false
 };
 
 const urlListSlice = createSlice({
   name: "urlList",
   initialState,
-  reducers: {},
+  reducers: {
+    copyLink: (state, action) => {
+      state.isCopied = true;
+      navigator.clipboard.writeText(state.shortenURLs[action.payload])
+    }
+  },
   extraReducers: {
     [getShortUrl.pending]: (state) => {
       state.isLoading = true;
@@ -43,5 +49,7 @@ const urlListSlice = createSlice({
     },
   },
 });
+
+export const { copyLink } = urlListSlice.actions;
 
 export default urlListSlice.reducer;

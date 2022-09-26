@@ -29,3 +29,14 @@
   padding: 1rem 2rem;
 }
 
+.copy {
+  &:focus {
+    background-color: $primeColor2;
+    span{
+      display: none;
+    }
+    &:after{
+      content: 'Copied!'
+    }
+  }
+}
