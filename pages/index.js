@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Description from "../components/Description/Description";
 import Header from "../components/Header/Header";
 import Nav from "../components/Nav/Nav";
 import SearchBar from "../components/SearchBar/SearchBar";
@@ -24,6 +25,7 @@ const Home = () => {
           <div className={s.wrapper}>
             <SearchBar />
             <UrlsList />
+            <Description />
           </div>
         </section>
       </main>

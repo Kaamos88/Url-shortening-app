@@ -1,0 +1,30 @@
+@import "../../styles/variables";
+
+.card {
+  width: 80%;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 0 2rem;
+  .content {
+    transform: translateY(-15%);
+    .icon{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      width: 80px;
+      height: 80px;
+      background-color: $primeColor2;
+    }
+    h2 {
+      margin-top: 1.5rem;
+      font-size: 1.2rem;
+      color: $VeryDarkBlue;
+    }
+    p {
+      font-size: .9rem;
+      color: $GrayishViolet;
+    }
+  }
+ 
+}

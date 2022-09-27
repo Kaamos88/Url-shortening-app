@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+
+.list {
+  display: flex;
+  justify-content: space-evenly;
+  ul {
+    &:first-child {
+      transform: translateY(-25%);
+    }
+  }
+}
