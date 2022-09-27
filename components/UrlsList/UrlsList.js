@@ -10,23 +10,23 @@ const UrlsList = () => {
   const renderList = URLs.map((url, i) => {
     return (
       <li id={i} key={i}>
-        <div className={s.listElement}>
-          <p>{url}</p>
-          <p id="copyUrl" onLoad={console.log("jestem")}>
+        <div className={s.urlsLinks}>
+          <p className={s.url}>{url}</p>
+          <p id="copyUrl" className={s.copyUrl}>
             {shortenURLs[i]}
           </p>
-          <div
-            className={s.btnWrapper}
-            onClick={() => {
-              dispatch(copyLink(i));
-            }}
-          >
-            <Button
-              nameIn={"Copy"}
-              type={"btnSq"}
-              copy={isCopied ? true : false}
-            />
-          </div>
+        </div>
+        <div
+          className={s.btnWrapper}
+          onClick={() => {
+            dispatch(copyLink(i));
+          }}
+        >
+          <Button
+            nameIn={"Copy"}
+            type={"btnSq"}
+            copy={isCopied ? true : false}
+          />
         </div>
       </li>
     );

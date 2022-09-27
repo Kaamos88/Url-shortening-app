@@ -1,0 +1,58 @@
+@import "../../styles/variables";
+
+.wrapper {
+  transform: translateY(-15%);
+  ul {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 1024px) {
+      width: 100%;
+    }
+    li {
+      border-radius: 12px;
+      margin-bottom: 1rem;
+      background-color: #fff;
+      @media screen and (min-width: 1024px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+      }
+      .urlsLinks {
+        @media screen and (min-width: 1024px) {
+          display: flex;
+          justify-content: space-between;
+          width: 85%;
+        }
+        p {
+          padding: 15px 7%;
+          margin: 0;
+          @media screen and (min-width: 1024px) {
+            padding: 0 1rem;
+          }
+        }
+        .url {
+          border-bottom: 1px solid $GrayishViolet;
+          font-weight: 500;
+          @media screen and (min-width: 1024px) {
+            border: 0;
+          }
+        }
+        .copyUrl {
+          color: $primeColor1;
+        }
+      }
+
+      .btnWrapper {
+        width: 85%;
+        margin: 0 auto 1rem auto;
+        @media screen and (min-width: 1024px) {
+          width: 15%;
+          margin: auto 0;
+        }
+      }
+    }
+  }
+}
